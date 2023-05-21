@@ -14,12 +14,10 @@ function decimalToBinary(decimal) {
     binary = remainder + binary;
     // Integer division by 2 to move to the next bit
     decimal = Math.floor(decimal / 2);
-  }
-
+  } 
   return binary;
-}
+} 
 
-// Example usage:
-const decimalNumber = 10;
-const binaryNumber = decimalToBinary(decimalNumber);
-console.log(binaryNumber); // Output: 1010
+const decimalinput=parseint(prompt("Enter a decimal number:"));
+const binryOutput=decimalToBinary(decimalinput);
+console.log("Binary equivalent:",binaryOutput); 
